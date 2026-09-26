@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Full-screen placement overlay.
-    Semi-transparent dark scrim + instruction label.
-    Covers the whole screen; a single tap picks the target coordinate.
--->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/placement_overlay_bg"
+    android:background="#99000000"
     android:contentDescription="@string/cd_placement_overlay">
 
     <TextView

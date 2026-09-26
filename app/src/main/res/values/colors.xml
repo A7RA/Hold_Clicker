@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Material 3 baseline seed: deep orange / amber for "Ra" branding -->
+    <!-- Material 3 baseline seed: deep orange / amber for Ra branding -->
     <color name="md_theme_primary">#FF6D00</color>
     <color name="md_theme_on_primary">#FFFFFF</color>
     <color name="md_theme_primary_container">#FFD7C4</color>
@@ -22,12 +22,12 @@
     <color name="md_theme_background">#FFF8F6</color>
 
     <!-- Status chips -->
-    <color name="chip_on">#C8E6C9</color>   <!-- light green -->
-    <color name="chip_off">#FFCDD2</color>  <!-- light red   -->
+    <color name="chip_on">#C8E6C9</color>
+    <color name="chip_off">#FFCDD2</color>
 
-    <!-- Overlay elements -->
-    <color name="trigger_color">#CCFF6D00</color>           <!-- semi-transparent orange  -->
-    <color name="trigger_pressed_color">#FFFF6D00</color>   <!-- opaque orange when active -->
-    <color name="target_color">#CCFF1744</color>            <!-- semi-transparent red      -->
-    <color name="placement_overlay_bg">#66000000</color>    <!-- dark scrim for placement  -->
+    <!-- Overlay elements (opaque values — alpha applied in code/drawable) -->
+    <color name="trigger_color">#FF6D00</color>
+    <color name="trigger_pressed_color">#FF8F00</color>
+    <color name="target_color">#FF1744</color>
+    <color name="placement_overlay_bg">#000000</color>
 </resources>

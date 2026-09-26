@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Circular background for the floating trigger button.
-    Uses a ripple so the press state gives visual feedback.
--->
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     android:color="#40FFFFFF">
 
     <item android:id="@android:id/mask">
-        <!-- Circular clip mask for the ripple -->
         <shape android:shape="oval">
             <solid android:color="#FFFFFFFF" />
         </shape>
     </item>
 
     <item>
-        <!-- Actual background: semi-transparent orange circle with shadow -->
         <shape android:shape="oval">
-            <solid android:color="@color/trigger_color" />
+            <!-- #CC alpha (80%) applied directly here, not via color resource -->
+            <solid android:color="#CCFF6D00" />
             <stroke
                 android:width="2dp"
                 android:color="#FFFF6D00" />
