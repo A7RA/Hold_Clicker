@@ -19,29 +19,34 @@ jobs:
           java-version: '21'
           distribution: 'microsoft'
 
-      # gradle-wrapper.jar is a binary not in the repo — download it
       - name: Download gradle-wrapper.jar
         run: |
           mkdir -p gradle/wrapper
-          curl -sL \
-            "https://github.com/gradle/gradle/raw/v8.11.1/gradle/wrapper/gradle-wrapper.jar" \
+          # Download from Maven Central — reliable, versioned
+          curl -fsSL \
+            "https://repo1.maven.org/maven2/org/gradle/wrapper/gradle-wrapper/8.11.1/gradle-wrapper-8.11.1.jar" \
+            -o gradle/wrapper/gradle-wrapper.jar \
+          || curl -fsSL \
+            "https://raw.githubusercontent.com/gradle/gradle/refs/tags/v8.11.1/gradle/wrapper/gradle-wrapper.jar" \
             -o gradle/wrapper/gradle-wrapper.jar
-          echo "jar size: $(wc -c < gradle/wrapper/gradle-wrapper.jar) bytes"
+          ls -lh gradle/wrapper/gradle-wrapper.jar
 
-      # Make gradlew executable (Windows line endings don't matter on Linux)
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      # Cache Gradle dependencies between runs
-      - name: Cache Gradle packages
+      - name: Show versions
+        run: |
+          cat gradle/wrapper/gradle-wrapper.properties
+          head -5 gradle/libs.versions.toml
+
+      - name: Cache Gradle
         uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle.kts', '**/libs.versions.toml') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
+          restore-keys: ${{ runner.os }}-gradle-
 
       - name: Build debug APK
         run: ./gradlew assembleDebug --no-daemon --stacktrace
