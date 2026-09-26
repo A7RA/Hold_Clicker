@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Material 3 baseline seed: deep orange / amber for Ra branding -->
     <color name="md_theme_primary">#FF6D00</color>
     <color name="md_theme_on_primary">#FFFFFF</color>
     <color name="md_theme_primary_container">#FFD7C4</color>
     <color name="md_theme_on_primary_container">#4A1500</color>
-
     <color name="md_theme_secondary">#775650</color>
     <color name="md_theme_on_secondary">#FFFFFF</color>
     <color name="md_theme_secondary_container">#FFD8D3</color>
     <color name="md_theme_on_secondary_container">#2C1512</color>
-
     <color name="md_theme_surface">#FFF8F6</color>
     <color name="md_theme_on_surface">#201A19</color>
     <color name="md_theme_surface_variant">#F5DED9</color>
     <color name="md_theme_on_surface_variant">#534340</color>
-
     <color name="md_theme_error">#BA1A1A</color>
     <color name="md_theme_on_error">#FFFFFF</color>
-
     <color name="md_theme_background">#FFF8F6</color>
-
-    <!-- Status chips -->
     <color name="chip_on">#C8E6C9</color>
     <color name="chip_off">#FFCDD2</color>
-
-    <!-- Overlay elements (opaque values — alpha applied in code/drawable) -->
     <color name="trigger_color">#FF6D00</color>
     <color name="trigger_pressed_color">#FF8F00</color>
     <color name="target_color">#FF1744</color>
