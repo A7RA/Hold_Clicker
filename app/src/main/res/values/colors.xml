@@ -26,7 +26,7 @@
     <color name="chip_off">#FFCDD2</color>  <!-- light red   -->
 
     <!-- Overlay elements -->
-    <color name="trigger_color">#CC FF6D00</color>          <!-- semi-transparent orange  -->
+    <color name="trigger_color">#CCFF6D00</color>           <!-- semi-transparent orange  -->
     <color name="trigger_pressed_color">#FFFF6D00</color>   <!-- opaque orange when active -->
     <color name="target_color">#CCFF1744</color>            <!-- semi-transparent red      -->
     <color name="placement_overlay_bg">#66000000</color>    <!-- dark scrim for placement  -->
