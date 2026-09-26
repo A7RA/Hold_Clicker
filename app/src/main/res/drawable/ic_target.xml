@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Target / crosshair icon shown at the tap target position.
+    40×40dp, red with white stroke for visibility on any background.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+
+    <!-- Outer circle -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M20,4 A16,16 0 1,0 20,36 A16,16 0 1,0 20,4 Z"
+        android:strokeColor="#FFFF1744"
+        android:strokeWidth="2.5" />
+
+    <!-- Inner circle -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M20,13 A7,7 0 1,0 20,27 A7,7 0 1,0 20,13 Z"
+        android:strokeColor="#FFFF1744"
+        android:strokeWidth="2" />
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#FFFF1744"
+        android:pathData="M20,18 A2,2 0 1,0 20,22 A2,2 0 1,0 20,18 Z" />
+
+    <!-- Horizontal crosshair line -->
+    <path
+        android:pathData="M2,20 L38,20"
+        android:strokeColor="#FFFF1744"
+        android:strokeWidth="1.5" />
+
+    <!-- Vertical crosshair line -->
+    <path
+        android:pathData="M20,2 L20,38"
+        android:strokeColor="#FFFF1744"
+        android:strokeWidth="1.5" />
+</vector>

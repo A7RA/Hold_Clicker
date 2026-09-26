@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Target indicator overlay — small crosshair pinned at the tap target.
+    FLAG_NOT_TOUCHABLE means all touches pass through to the app beneath.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/target_indicator_size"
+    android:layout_height="@dimen/target_indicator_size"
+    android:contentDescription="@string/cd_target_indicator">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_target" />
+
+</FrameLayout>

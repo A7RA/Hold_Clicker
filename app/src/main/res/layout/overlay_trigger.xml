@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Floating trigger button overlay view.
+
+    This is a circular button. The entire view is the touch target —
+    touching anywhere on it starts turbo; dragging moves the window.
+
+    Keep it simple: one ImageView inside a FrameLayout so we can apply
+    a circular ripple background easily.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/trigger_size"
+    android:layout_height="@dimen/trigger_size"
+    android:contentDescription="@string/cd_trigger_button">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_trigger"
+        android:contentDescription="@null"
+        android:scaleType="center"
+        android:src="@drawable/ic_trigger" />
+
+</FrameLayout>

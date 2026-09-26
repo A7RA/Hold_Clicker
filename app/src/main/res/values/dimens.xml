@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="trigger_size">64dp</dimen>
+    <dimen name="target_indicator_size">40dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_margin">12dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="section_spacing">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+</resources>

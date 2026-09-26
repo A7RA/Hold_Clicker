@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Full-screen placement overlay.
+    Semi-transparent dark scrim + instruction label.
+    Covers the whole screen; a single tap picks the target coordinate.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/placement_overlay_bg"
+    android:contentDescription="@string/cd_placement_overlay">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#AA000000"
+        android:padding="16dp"
+        android:text="Tap anywhere to set the target"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

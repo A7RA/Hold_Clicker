@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RaClicker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFB74D</item>
+        <item name="colorOnPrimary">#4A1500</item>
+        <item name="colorPrimaryContainer">#6B3500</item>
+        <item name="colorOnPrimaryContainer">#FFDBC9</item>
+
+        <item name="colorSecondary">#E7BDBA</item>
+        <item name="colorOnSecondary">#442927</item>
+        <item name="colorSecondaryContainer">#5D3F3C</item>
+        <item name="colorOnSecondaryContainer">#FFD8D3</item>
+
+        <item name="colorSurface">#201A19</item>
+        <item name="colorOnSurface">#EDE0DD</item>
+        <item name="colorSurfaceVariant">#534340</item>
+        <item name="colorOnSurfaceVariant">#D8C2BE</item>
+
+        <item name="colorError">#FFB4AB</item>
+        <item name="colorOnError">#690005</item>
+
+        <item name="android:windowBackground">#201A19</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

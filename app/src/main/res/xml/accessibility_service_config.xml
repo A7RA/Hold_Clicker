@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Accessibility Service configuration for Ra Clicker.
+
+    canPerformGestures="true"  — required for dispatchGesture() to work.
+    accessibilityEventTypes=""  — we don't consume any accessibility events;
+                                  this keeps the service lightweight.
+    accessibilityFeedbackType  — TYPE_GENERIC_FEEDBACK since we provide no
+                                  screen-reader feedback.
+    canRetrieveWindowContent   — false, we never inspect window content.
+    notificationTimeout        — 0, irrelevant since we handle no events.
+-->
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes=""
+    android:accessibilityFeedbackType="accessibilityFeedbackGeneric"
+    android:accessibilityFlags=""
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="false"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="0"
+    android:settingsActivity="com.raclicker.app.MainActivity" />

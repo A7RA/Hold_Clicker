@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark-mode chip colors -->
+    <color name="chip_on">#1B5E20</color>
+    <color name="chip_off">#B71C1C</color>
+</resources>
