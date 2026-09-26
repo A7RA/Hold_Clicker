@@ -24,7 +24,7 @@ jobs:
         run: |
           mkdir -p gradle/wrapper
           curl -sL \
-            "https://github.com/gradle/gradle/raw/v8.9.0/gradle/wrapper/gradle-wrapper.jar" \
+            "https://github.com/gradle/gradle/raw/v8.11.1/gradle/wrapper/gradle-wrapper.jar" \
             -o gradle/wrapper/gradle-wrapper.jar
           echo "jar size: $(wc -c < gradle/wrapper/gradle-wrapper.jar) bytes"
 
